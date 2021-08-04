@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.musophobia.intellijpoc.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.musophobia.intellijpoc.MyBundle
 
 class MyApplicationService {
 
