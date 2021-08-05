@@ -10,6 +10,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.musophobia.intellijpoc.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.musophobia.intellijpoc.services.MyProjectService"/>
+        <appStarter implementation="com.musophobia.python.PlugProduct"/>
     </extensions>
 
     <applicationListeners>

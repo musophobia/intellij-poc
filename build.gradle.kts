@@ -99,6 +99,16 @@ tasks {
         changeNotes.set(provider { changelog.getLatest().toHTML() })
     }
 
+    runIde {
+        val config: String? by project
+        args = listOfNotNull("runphobia", config)
+        jvmArgs = listOf("-Djava.awt.headless=true")
+        maxHeapSize = "8g"
+    }
+    register("runphobia") {
+        dependsOn(runIde)
+    }
+
     runPluginVerifier {
         ideVersions.set(properties("pluginVerifierIdeVersions").split(',').map(String::trim).filter(String::isNotEmpty))
     }

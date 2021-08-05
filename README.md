@@ -38,3 +38,9 @@ To keep everything working, do not remove `<!-- ... -->` sections.
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
+
+## Headless Application
+
+- Run from command line
+   
+   `./gradlew runphobia -Pconfig="path/to/config"` 
